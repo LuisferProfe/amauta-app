@@ -1,0 +1,59 @@
+{
+  "mcpServers": {
+
+    "fetch": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-fetch"],
+      "description": "Consulta URLs y convierte HTML a Markdown. Ideal para leer docs de Astro, MDN, Cloudflare Pages."
+    },
+
+    "memory": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-memory"],
+      "description": "Knowledge graph persistente entre sesiones. Recuerda decisiones de arquitectura, convenciones y contexto del proyecto."
+    },
+
+    "sequential-thinking": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-sequentialthinking"],
+      "description": "Razonamiento estructurado paso a paso. Útil para planificar labs complejos, debugging de TypeScript strict y decisiones de arquitectura."
+    },
+
+    "git": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-git", "--repository", "/Users/luisferoviedo/Documents/Curso Backend/amauta-app"],
+      "description": "git log, diff, blame, commits desde Claude. Para changelogs, revisión de diffs y análisis de historia."
+    },
+
+    "context7": {
+      "command": "npx",
+      "args": ["-y", "@upstash/context7-mcp"],
+      "description": "Docs actualizadas de librerías npm en contexto: Astro 6, React 19, Tailwind CSS 4, Vitest, p5.js, mathjs, zod. Sin salir del flujo de trabajo."
+    },
+
+    "playwright": {
+      "command": "npx",
+      "args": ["-y", "@playwright/mcp", "--headless"],
+      "description": "Browser automation: tests E2E, screenshots de labs p5.js en distintos viewports, auditorías de accesibilidad con axe-core."
+    },
+
+    "github": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-github"],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "${GITHUB_PERSONAL_ACCESS_TOKEN}"
+      },
+      "description": "Issues, PRs, releases, code search de GitHub. Requiere: GITHUB_PERSONAL_ACCESS_TOKEN en .env.local (scopes: repo, issues, pull_requests)."
+    },
+
+    "cloudflare": {
+      "command": "npx",
+      "args": ["-y", "@cloudflare/mcp-server-cloudflare"],
+      "env": {
+        "CLOUDFLARE_API_TOKEN": "${CLOUDFLARE_API_TOKEN}"
+      },
+      "description": "Gestiona Cloudflare Pages: deploys, build logs, variables de entorno, analytics. Requiere: CLOUDFLARE_API_TOKEN en .env.local."
+    }
+
+  }
+}
