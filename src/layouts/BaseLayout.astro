@@ -1,0 +1,29 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const {
+  title,
+  description = 'Laboratorios virtuales 2D de ciencias para estudiantes colombianos de secundaria. Gratuito, mobile-first, sin login.',
+} = Astro.props;
+
+const fullTitle = title === 'Amauta' ? title : `${title} — Amauta`;
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+    <title>{fullTitle}</title>
+  </head>
+  <body class="min-h-screen bg-white text-neutral-900 antialiased">
+    <slot />
+  </body>
+</html>

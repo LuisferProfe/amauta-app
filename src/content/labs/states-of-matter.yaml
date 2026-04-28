@@ -1,0 +1,34 @@
+slug: states-of-matter
+title: Estados de la materia
+description: Experimenta cómo cambian las partículas de una sustancia al variar la temperatura. Observa la transición entre sólido, líquido y gas con base en la teoría cinética.
+area: chemistry
+level:
+  - middle
+  - high
+competencies:
+  - modeling
+  - concept-application
+  - systems-thinking
+difficulty: easy
+estimatedDurationMin: 20
+availableModes:
+  - free
+  - 5E
+  - guided
+  - eval
+curriculumTags:
+  co_dba:
+    - DBA-Ciencias-6-01
+    - DBA-Ciencias-8-05
+  co_icfes:
+    - uso-comprensivo
+    - explicacion-fenomenos
+  co_componente:
+    - entorno-fisico
+  co_grado:
+    - 6
+    - 7
+    - 8
+    - 9
+published: false
+thumbnail: /thumbnails/states-of-matter.webp
